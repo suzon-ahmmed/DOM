@@ -1,0 +1,43 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+   background: #ced4d488;
+
+}
+
+nav {
+   height: 58px;
+   background: #ffffff;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 0 1.5rem;
+   .logo{
+      font-size: 1.7rem;
+      font-weight: 700;
+      img{
+         width: 110px;
+      }
+   }
+   .items {
+      display: flex;
+      li {
+         list-style: none;
+         padding: 0 0.5rem;
+         &:last-child {
+            padding-right: 0;
+         }
+         .item {
+            text-decoration: none;
+            color: black;
+
+         }
+      }
+   }
+}
+#header {
+   text-transform: uppercase;
+}
