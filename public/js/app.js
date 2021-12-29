@@ -193,8 +193,63 @@
 // let parent = children.parentElement;
 // console.log(parent);
 //children to direct grandparent
-const children = document.querySelector('.item');
-const grandparent = children.closest('.todo-list');
-console.log(grandparent);
+// const children = document.querySelector('.item');
+// const grandparent = children.closest('.todo-list');
+// console.log(grandparent);
+// const children1 = document.querySelector('.item:last-chile');
+
+
+
+// const divElement = document.createElement('div');
+// divElement.className= 'myDiv'
+// divElement.setAttribute= ('id', 'myDiv');
+
+// const containerLogo = document.querySelector('.container-logo');
+// const logoImg = containerLogo.querySelector('img');
+// containerLogo.insertBefore(divElement, logoImg);
+// containerLogo.appendChild(divElement);
+
+
+// todo app
+const addTask = document.querySelector('#new-task');
+const form = document.querySelector('form');
+const addList = document.querySelector('#items');
+const compliteUl = document.querySelector('.compite-list ul');
+
+//function for create a task 
+let createTask = function (task) {
+   let listItem = document.createElement('li');
+   let checkBox = document.createElement('input');
+   let taskName = document.createElement('label');
+
+   taskName.innerText = task;
+   checkBox.type = 'checkbox';
+
+   listItem.appendChild(checkBox);
+   listItem.appendChild(taskName);
+
+   return listItem;
+}
+
+let addTaskItem = function (event) {
+   event.preventDefault();
+   let listItem = createTask(addTask.value);
+
+   addList.appendChild(listItem);
+
+   bindInCompliteItem(listItem, compliteTask);
+}
+
+let compliteTask = function (event) {
+   
+}
+
+let bindInCompliteItem = function (taskItem, checkBoxCheck) {
+   let checkBox = taskItem.querySelector('input[type="checkbox"]');
+   checkBox.oncheck = checkBoxCheck;
+}
+form.addEventListener('submit', addTaskItem);
+
+
 
 
