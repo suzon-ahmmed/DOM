@@ -17,16 +17,16 @@
         <img src="./public/images/dom.png" alt="">
       </div>
       <div class="nav-list">
-        <h1>11</h1>
-        <ul class="items">
+      
+        <ul class="nav-items">
           <li>
-            <a class="item" href="javascript:;">Home</a>
+            <a class="nav-item" href="javascript:;">Home</a>
           </li>
           <li>
-            <a class="item" href="javascript:;">About</a>
+            <a class="nav-item" href="javascript:;">About</a>
           </li>
           <li>
-            <a class="item" href="index.html">Blog</a>
+            <a class="nav-item" href="index.html">Blog</a>
           </li>
         </ul>
       </div>
@@ -38,30 +38,41 @@
 
   <main>
     <section class="container">
-      <div id="firstDiv">
-        <h2 id="header">Play with DOM</h2>
+      <div class="container-logo">
+        <img src="./public/images/dom.png" alt="Learn DOM" />
       </div>
-      <form action="">
-        <input type="text" id="inputField">
-        <button type="button">Dubmit</button>
+      <h1 id="header" class="header">To-Do App</h1>
+
+      <form class="new-task-container box">
+        <label for="new-task">Add New Task</label>
+        <input type="text" id="new-task" />
+        <input type="submit" id="addTask" value="Add Task" />
       </form>
 
+      <div class="todo-list box">
+        <h2>Incomplete Tasks</h2>
+        <ul id="items">
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+          <li class="item">
+            <input type="checkbox" /><label>Task Name</label>
+          </li>
+        </ul>
+      </div>
+      <!--/todo-list-->
 
-      <ul class="items-2" id="listid">
-        <li>
-          <a class="item" href="javascript:;">Home</a>
-        </li>
-        <li>
-          <a class="item" href="javascript:;">About</a>
-        </li>
-        <li>
-          <a class="item" href="index.html">Blog</a>
-        </li>
-      </ul>
-
-      </nav>
+      <div class="complete-list box">
+        <h2>Completed Tasks</h2>
+        <ul>
+          <li class="item">Task Name <button class="delete">Delete</button></li>
+        </ul>
+      </div>
+      <!--/complete-list-->
     </section>
-
   </main>
 
   <footer>
