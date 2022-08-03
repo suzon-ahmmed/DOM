@@ -2,7 +2,12 @@
 module.exports = {
   content: ["./*.html"],
   theme: {
-    extend: {},
+    extend: {
+     
+    },
   },
-  plugins: [],
+  container: {
+    center: true,
+  },
+  plugins: [require('flowbite/plugin')],
 }

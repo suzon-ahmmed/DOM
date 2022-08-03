@@ -19,5 +19,8 @@
   "homepage": "https://github.com/suzon-ahmmed/DOM#readme",
   "devDependencies": {
     "tailwindcss": "^3.1.7"
+  },
+  "dependencies": {
+    "flowbite": "^1.5.1"
   }
 }
