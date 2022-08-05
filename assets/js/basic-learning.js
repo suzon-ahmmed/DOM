@@ -210,45 +210,130 @@
 // containerLogo.appendChild(divElement);
 
 
-// todo app
-const addTask = document.querySelector('#new-task');
-const form = document.querySelector('form');
-const addList = document.querySelector('#items');
-const compliteUl = document.querySelector('.compite-list ul');
+// // todo app
+// const addTask = document.querySelector('#new-task');
+// const form = document.querySelector('form');
+// const addList = document.querySelector('#items');
+// const compliteUl = document.querySelector('.compite-list ul');
 
-//function for create a task 
-let createTask = function (task) {
-   let listItem = document.createElement('li');
-   let checkBox = document.createElement('input');
-   let taskName = document.createElement('label');
+// //function for create a task 
+// let createTask = function (task) {
+//    let listItem = document.createElement('li');
+//    let checkBox = document.createElement('input');
+//    let taskName = document.createElement('label');
 
-   taskName.innerText = task;
-   checkBox.type = 'checkbox';
+//    taskName.innerText = task;
+//    checkBox.type = 'checkbox';
 
-   listItem.appendChild(checkBox);
-   listItem.appendChild(taskName);
+//    listItem.appendChild(checkBox);
+//    listItem.appendChild(taskName);
 
-   return listItem;
-}
+//    return listItem;
+// }
 
-let addTaskItem = function (event) {
-   event.preventDefault();
-   let listItem = createTask(addTask.value);
+// let addTaskItem = function (event) {
+//    event.preventDefault();
+//    let listItem = createTask(addTask.value);
 
-   addList.appendChild(listItem);
+//    addList.appendChild(listItem);
 
-   bindInCompliteItem(listItem, compliteTask);
-}
+//    bindInCompliteItem(listItem, compliteTask);
+// }
 
-let compliteTask = function (event) {
-   
-}
+// let compliteTask = function (event) {
 
-let bindInCompliteItem = function (taskItem, checkBoxCheck) {
-   let checkBox = taskItem.querySelector('input[type="checkbox"]');
-   checkBox.oncheck = checkBoxCheck;
-}
-form.addEventListener('submit', addTaskItem);
+// }
+
+// let bindInCompliteItem = function (taskItem, checkBoxCheck) {
+//    let checkBox = taskItem.querySelector('input[type="checkbox"]');
+//    checkBox.oncheck = checkBoxCheck;
+// }
+// form.addEventListener('submit', addTaskItem);
+
+
+// const upgradeDate = document.getElementById('updated-date');
+// const curentDate = new Date();
+// console.log(curentDate);
+
+
+// basic DOM 
+
+// function validateForm() {
+//    let x = document.forms["myForm"]['fname'].value;
+
+//    if (isNaN(x) || x < 1 || x > 10) {
+//       alert('Please enter between 1 to 10.');
+//    }
+//    else {
+//       document.getElementById('demo').innerHTML = x;
+//    }
+//    // console.log(x);
+
+//    return false;
+// }
+
+// function changeStyle() {
+//    const ptag = document.getElementById('demo');
+//    ptag.style.color = 'red';
+
+// }
+
+// function myBox() {
+//    const box = document.getElementById('animate');
+//    let pos = 0;
+
+//    const interval =  setInterval(anymate, 5);
+
+//    function anymate() {
+//       if (pos < 350) {
+//          pos++;
+//          box.style.top = pos + 'px';
+//          box.style.left = pos + 'px';
+//       }else{
+//          clearInterval(interval);
+//       }
+
+//    }
+// }
+
+// // const hscript = document.querySelector('#hScript');
+// // hscript.src = "./assets/js/try.js";
+
+// const eventListen = document.querySelector('#btnId');
+
+// // eventListen.addEventListener('click', myBox);
+// eventListen.addEventListener('click', function(){
+//    console.log('hello world');
+// });
+
+
+// DOM navigate
+//  const pt = document.getElementById('demo');
+
+//  const way1 = pt.innerHTML;
+//  console.log(way1 + ' innerHTML');
+
+//  const way2 = pt.firstChild.nodeValue;
+//  console.log(way2 + ' firstChild.nodeValue'); 
+
+//  const way3 = pt.childNodes[0].nodeValue;
+//  console.log(way3 + ' childNodes[0].nodeValue');
+
+//DOM Nodes
+
+const newP = document.createElement('p');
+const textNode = document.createTextNode('This id new p');
+
+newP.appendChild(textNode);
+
+const div = document.getElementById('div1');
+// div.appendChild(newP);
+const p1 = document.getElementById('p1');
+const p2 = document.getElementById('p2');
+// div.insertBefore(newP, p1);
+div.insertBefore(newP, p2);
+
+div.removeChild(p2);
 
 
 
