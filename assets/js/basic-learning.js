@@ -321,20 +321,139 @@
 
 //DOM Nodes
 
-const newP = document.createElement('p');
-const textNode = document.createTextNode('This id new p');
+// const newP = document.createElement('p');
+// const textNode = document.createTextNode('This id new p');
 
-newP.appendChild(textNode);
+// newP.appendChild(textNode);
 
-const div = document.getElementById('div1');
-// div.appendChild(newP);
-const p1 = document.getElementById('p1');
-const p2 = document.getElementById('p2');
-// div.insertBefore(newP, p1);
-div.insertBefore(newP, p2);
+// const div = document.getElementById('div1');
+// // div.appendChild(newP);
+// const p1 = document.getElementById('p1');
+// const p2 = document.getElementById('p2');
+// // div.insertBefore(newP, p1);
+// div.insertBefore(newP, p2);
 
-div.removeChild(p2);
-
-
+// div.removeChild(p2);
 
 
+// Mordan Javascript ES6 
+
+// arrowFunction 
+// const arroeF = () => 10;
+
+// const input = document.querySelector('.search');
+// const result = document.querySelector('.result');
+// const thanks = document.querySelector('.thanks');
+
+// function show() {
+//    result.innerHTML = this.value;
+//    let self = this;
+//    setTimeout(function () {
+//       thanks.innerHTML = `Thanks! You are write: ${self.value}`;
+//    }, 1000);
+// }
+
+// input.addEventListener('keyup', show);
+
+// // ternary operator 
+
+// let age = 50;
+
+// const type = age >= 50 ? 'Old' : age >= 18 ? 'Adelt' : age < 9 ? 'Child' : 'young';
+// console.log(type);
+
+// //  array map 
+const arr = [1, 2, 3, 4, 5];
+// console.log('main array: ' + arr);
+
+// const arr2 = arr.map((value) => {
+//    return value * 2;
+// })
+// console.log('array map(): ' + arr2);
+
+// // array resuce()
+
+// const sum = arr.reduce((previousValue, currentValue) => {
+//    return previousValue + currentValue;
+// }, 0)
+
+// console.log('array resuce(): ' + sum);
+
+
+// // spread operator 
+// // array spread 
+const newArr = [1, 2, 3, 4, 5, 6];
+
+// // const resultArr = newArr.concat(arr, arr2); //using concate 
+// const resultArr = [...newArr, 10, 20, 30, 40, 50, 60];
+// console.log('result array: ' + resultArr);
+
+// const copyOfArr = [...arr];
+// arr.push(60);
+// console.log(copyOfArr);
+// console.log(arr);
+
+// // object spread 
+// const a1 = {
+//    a: 7,
+//    b: 8,
+// };
+// const a2 = {
+//    x: 3,
+//    y: 4,
+// }
+// const margeObj = {
+//    ...a1,
+//    ...a2,
+// }
+// console.log(margeObj);
+
+// //rest opoerator
+
+function rest(a, ...parms) {
+   // console.log(typeof arguments);
+
+   console.log(a); //a = 1 because a teake the first parameter  
+   console.log(parms);
+
+}
+rest(1, 2, 3, 4, 5);
+
+// object distructring 
+
+const user = {
+   name: 'John',
+   age: 36,
+   email: 'john@example.com',
+   eduection: {
+      degree: 'masters',
+   }
+}
+
+const { eduection:
+   { degree: title } = {} } = user;
+console.log(title);
+
+// array distructring 
+// let [a, b] = arr; //set a=1, b=2
+// let [,a,,,b] = arr; //set a=2, b=5
+
+const nestedArr = [1, 2, [3, 100, 200], 4, 5, 6];
+let [, , [, a], , , b] = nestedArr; //set a=100, b=6
+console.log(a, b);
+// swap value 
+let m = 1;
+let n = 2;
+[n, m] = [m, n];
+console.log(m, n);
+
+
+// emport and export 
+
+
+// copywithin() methode of array
+// array.copyWithin (target, start, end) target is required, start defoult teake 0 and end takes length of array
+
+console.log(arr);
+const exp = arr.copyWithin(3,1,2);
+console.log(exp);
