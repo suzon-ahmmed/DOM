@@ -964,10 +964,6 @@ input[type="range"]::-ms-fill-lower {
   margin-right: 0.5rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mb-3 {
   margin-bottom: 0.75rem;
 }
@@ -978,6 +974,10 @@ input[type="range"]::-ms-fill-lower {
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-14 {
@@ -1152,12 +1152,12 @@ input[type="range"]::-ms-fill-lower {
   border-width: 1px;
 }
 
-.border-b-2 {
-  border-bottom-width: 2px;
+.border-b {
+  border-bottom-width: 1px;
 }
 
-.border-dashed {
-  border-style: dashed;
+.border-b-2 {
+  border-bottom-width: 2px;
 }
 
 .border-gray-200 {
@@ -1272,6 +1272,10 @@ input[type="range"]::-ms-fill-lower {
   padding-bottom: 0.25rem;
 }
 
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
 .pl-3 {
   padding-left: 0.75rem;
 }
@@ -1309,6 +1313,11 @@ input[type="range"]::-ms-fill-lower {
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .text-2xl {
@@ -1614,7 +1623,7 @@ input[type="checkbox"] {
 }
 
 .doneList {
-  margin-top: 1.25rem;
+  margin-top: 1rem;
 }
 
 .milestone, 
@@ -1625,12 +1634,9 @@ input[type="checkbox"] {
   line-height: 1.25rem;
 }
 
-.border-b {
-  border-bottom-width: 2px;
-  border-style: dashed;
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
-}
+/* .border-b {
+  @apply border-dashed border-b-2 border-gray-200;
+} */
 
 .hidden_panel {
   max-height: 0px;
@@ -1644,10 +1650,6 @@ input[type="checkbox"] {
 
 .show {
   max-height: 400px;
-}
-
-.loaded {
-  opacity: 1;
 }
 
 .hover\:rotate-6:hover {

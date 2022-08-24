@@ -64,7 +64,7 @@ input[type="checkbox"] {
 }
 
 .doneList {
-  @apply mt-5;
+  @apply mt-4;
 }
 
 .milestone,
@@ -72,9 +72,9 @@ input[type="checkbox"] {
   @apply text-sm m-2 p-2;
 }
 
-.border-b {
+/* .border-b {
   @apply border-dashed border-b-2 border-gray-200;
-}
+} */
 
 .hidden_panel {
   @apply max-h-0 overflow-hidden;
@@ -89,8 +89,4 @@ input[type="checkbox"] {
 
 .show {
   @apply max-h-[400px];
-}
-
-.loaded {
-  @apply opacity-100;
 }
