@@ -26,7 +26,10 @@ body {
 }
 
 section {
-  @apply my-8;
+  @apply my-5 px-2 xl:px-0 sm:my-8;
+}
+.hero-image path {
+  @apply fill-gray-100 dark:fill-slate-800;
 }
 
 /* style for todo app */
@@ -60,11 +63,11 @@ input[type="checkbox"] {
 
 .milestones,
 .doneList {
-  @apply cursor-pointer max-h-[495px] overflow-auto;
+  @apply cursor-pointer max-h-[530px] overflow-auto;
 }
 
 .doneList {
-  @apply mt-4;
+  /* @apply mt-4; */
 }
 
 .milestone,

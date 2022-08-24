@@ -881,17 +881,26 @@ input[type="range"]::-ms-fill-lower {
   bottom: 0px;
 }
 
+.inset-y-32 {
+  top: 8rem;
+  bottom: 8rem;
+}
+
 .inset-y-3\/4 {
   top: 75%;
   bottom: 75%;
 }
 
-.top-0 {
-  top: 0px;
+.-top-1 {
+  top: -0.25rem;
 }
 
 .left-0 {
   left: 0px;
+}
+
+.bottom-0 {
+  bottom: 0px;
 }
 
 .bottom-4 {
@@ -900,6 +909,14 @@ input[type="range"]::-ms-fill-lower {
 
 .z-20 {
   z-index: 20;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.z-10 {
+  z-index: 10;
 }
 
 .col-span-9 {
@@ -926,11 +943,6 @@ input[type="range"]::-ms-fill-lower {
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
 }
 
 .my-3 {
@@ -988,16 +1000,16 @@ input[type="range"]::-ms-fill-lower {
   margin-top: 0.5rem;
 }
 
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mt-6 {
   margin-top: 1.5rem;
 }
 
 .mt-5 {
   margin-top: 1.25rem;
-}
-
-.mb-6 {
-  margin-bottom: 1.5rem;
 }
 
 .mb-2 {
@@ -1032,8 +1044,8 @@ input[type="range"]::-ms-fill-lower {
   height: 2rem;
 }
 
-.h-\[380px\] {
-  height: 380px;
+.h-\[250px\] {
+  height: 250px;
 }
 
 .h-\[180px\] {
@@ -1076,8 +1088,8 @@ input[type="range"]::-ms-fill-lower {
   grid-template-columns: repeat(9, minmax(0, 1fr));
 }
 
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+.grid-cols-1 {
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .grid-cols-2 {
@@ -1200,10 +1212,6 @@ input[type="range"]::-ms-fill-lower {
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/images\/hero-Dom\.png\'\)\] {
-  background-image: url('/assets/images/hero-Dom.png');
-}
-
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -1214,16 +1222,8 @@ input[type="range"]::-ms-fill-lower {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
-.bg-no-repeat {
-  background-repeat: no-repeat;
+.fill-gray-200 {
+  fill: #E5E7EB;
 }
 
 .object-cover {
@@ -1270,6 +1270,10 @@ input[type="range"]::-ms-fill-lower {
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.pt-1 {
+  padding-top: 0.25rem;
 }
 
 .pl-1 {
@@ -1325,6 +1329,11 @@ input[type="range"]::-ms-fill-lower {
   line-height: 2rem;
 }
 
+.text-4xl {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -1337,8 +1346,16 @@ input[type="range"]::-ms-fill-lower {
   font-weight: 600;
 }
 
+.uppercase {
+  text-transform: uppercase;
+}
+
 .capitalize {
   text-transform: capitalize;
+}
+
+.italic {
+  font-style: italic;
 }
 
 .text-gray-300 {
@@ -1464,8 +1481,32 @@ body {
 }
 
 section {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 640px) {
+  section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+
+.hero-image path {
+  fill: #F3F4F6;
+}
+
+.dark .hero-image path {
+  fill: #1e293b;
 }
 
 /* style for todo app */
@@ -1617,13 +1658,13 @@ input[type="checkbox"] {
 
 .milestones, 
 .doneList {
-  max-height: 495px;
+  max-height: 530px;
   cursor: pointer;
   overflow: auto;
 }
 
 .doneList {
-  margin-top: 1rem;
+  /* @apply mt-4; */
 }
 
 .milestone, 
@@ -1775,6 +1816,10 @@ input[type="checkbox"] {
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:fill-slate-800 {
+  fill: #1e293b;
+}
+
 .dark .dark\:text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
@@ -1877,6 +1922,14 @@ input[type="checkbox"] {
     display: flex;
   }
 
+  .sm\:h-\[350px\] {
+    height: 350px;
+  }
+
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
   .sm\:items-center {
     align-items: center;
   }
@@ -1918,16 +1971,8 @@ input[type="checkbox"] {
 }
 
 @media (min-width: 768px) {
-  .md\:mb-0 {
-    margin-bottom: 0px;
-  }
-
   .md\:flex {
     display: flex;
-  }
-
-  .md\:justify-between {
-    justify-content: space-between;
   }
 
   .md\:p-6 {
@@ -1937,6 +1982,11 @@ input[type="checkbox"] {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:text-6xl {
+    font-size: 3.75rem;
+    line-height: 1;
   }
 }
 
@@ -1962,7 +2012,17 @@ input[type="checkbox"] {
     width: 75%;
   }
 
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
   .lg\:p-8 {
     padding: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
