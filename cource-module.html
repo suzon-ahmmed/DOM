@@ -9,39 +9,39 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
         integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./src/css/style.css">
 
 </head>
 
 <body>
     <header class="bg-gray-800 h-14 fixed -top-1  z-20 left-0 w-full flex items-center">
         <nav class="container mx-auto flex justify-between items-center pt-1 px-2 md:px-0 text-gray-300">
-          <div>
-            <a href="index.html" class="flex">
-              <img src="./assets/images/logo.svg" width="40px" alt="" />
-              <span class="text-3xl font-bold ml-2 text-gray-100">DOM</span>
-            </a>
-          </div>
-          <div class="hidden md:flex items-center space-x-4">
-            <a href="javascript:;" class="hover:text-white text-gray-200">About</a>
-            <a href="javascript:;" class="hover:text-white text-gray-200">Contuct</a>
-            <a href="javascript:;" class="hover:text-white text-gray-200">Projects</a>
-            <button id="theme-toggle" type="button"
-              class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-              <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
-              </svg>
-              <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
-                  fill-rule="evenodd" clip-rule="evenodd"></path>
-              </svg>
-            </button>
-          </div>
+            <div>
+                <a href="index.html" class="flex">
+                    <img src="./src/images/logo.svg" width="40px" alt="" />
+                    <span class="text-3xl font-bold ml-2 text-gray-100">DOM</span>
+                </a>
+            </div>
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="javascript:;" class="hover:text-white text-gray-200">About</a>
+                <a href="javascript:;" class="hover:text-white text-gray-200">Contuct</a>
+                <a href="javascript:;" class="hover:text-white text-gray-200">Projects</a>
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                            fill-rule="evenodd" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+            </div>
         </nav>
-      </header>
+    </header>
 
     <main>
         <section>
@@ -51,7 +51,7 @@
                         <div
                             class="bg-white border  overflow-hidden border-gray-200 rounded shadow-md dark:bg-gray-800 dark:border-gray-700">
                             <div class="milestoneDetails">
-                                <img class="milestoneImage" src="./assets/images/kv.png" alt="" />
+                                <img class="milestoneImage" src="./src/images/kv.png" alt="" />
                                 <div class="m-3 lg:m-6 sm:m-4">
                                     <h1 class="text-xl sm:text-2xl font-medium title">Module title here</h1>
                                     <p class="text-sm sm:text-base font-medium  details">Module description here</p>
@@ -151,7 +151,7 @@
 
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="javascript:;" class="flex items-center justify-center">
-                    <img src="./assets/images/logo.svg" class="mr-3 h-8" alt=" Logo">
+                    <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
                     <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">DOM</span>
                 </a>
                 <div class="flex mt-4 space-x-6 sm:justify-center justify-center sm:mt-0">
@@ -210,9 +210,9 @@
     </footer>
 
 
-    <script src="./assets/js/color.js"></script>
-    <script src="./assets/js/data.js"></script>
-    <script src="./assets/js/cource-module.js"></script>
+    <script src="./src/js/color.js"></script>
+    <script src="./src/js/data.js"></script>
+    <script src="./src/js/cource-module.js"></script>
 </body>
 
 </html>
