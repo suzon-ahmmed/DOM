@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx tailwindcss -i ./assets/css/tailwind.css -o ./assets/css/style.css --watch"
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./src/css/style.css --watch"
   },
   "repository": {
     "type": "git",

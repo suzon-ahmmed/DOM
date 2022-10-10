@@ -6,100 +6,102 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Learn DOM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/style.css">
-
 </head>
 
 <body>
-    <header class="fixed -top-1 sm:top-0  z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-slate-800/75">
-        <div class="flex items-center justify-between container mx-auto px-3 sm:px-0 h-[60px]  text-slate-700 dark:text-slate-200">
-          <div>
-            <a href="index.html"class="flex items-center space-x-2 font-medium text-[22px] text-slate-900 dark:text-white">
-              <img src='./src/images/logo.svg' alt="tailwind" class="w-9 h-9" />
-              <span>DOM</span>
-            </a>
-            
-          </div>
-    
-          <div class="flex items-center space-x-6 text-sm font-semibold">
-            <button id="theme-toggle" type="button"
-            class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
-            <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
-              xmlns="http://www.w3.org/2000/svg">
-              <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
-              class="fill-sky-400/20"
-            ></path>
-            <path
-              d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
-              class="fill-sky-500"
-            ></path>
-            <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
-              class="fill-sky-500"
-            ></path>
-            </svg>
-            <svg id="theme-toggle-light-icon" viewBox="0 0 24 24" fill="none" class="hidden w-6 h-6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-sky-500"></path><path d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836" class="stroke-sky-500"></path></svg>
-          </button>
-          </div>
-        </div>
-      </header>
+    <header
+        class="fixed -top-1 sm:top-0  z-40 w-full backdrop-blur flex-none transition-colors duration-500 lg:z-50 border-b border-slate-900/10 dark:border-slate-50/[0.06] bg-white supports-backdrop-blur:bg-white/95 dark:bg-slate-800/75">
+        <div
+            class="flex items-center justify-between container mx-auto px-3 sm:px-0 h-[60px]  text-slate-700 dark:text-slate-200">
+            <div>
+                <a href="index.html"
+                    class="flex items-center space-x-2 font-medium text-[22px] text-slate-900 dark:text-white">
+                    <img src='./src/images/logo.svg' alt="tailwind" class="w-9 h-9" />
+                    <span>DOM</span>
+                </a>
 
+            </div>
+            <div class="flex items-center space-x-6 text-sm font-semibold">
+                <button id="theme-toggle" type="button"
+                    class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                    <svg id="theme-toggle-dark-icon" class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 24 24"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17.715 15.15A6.5 6.5 0 0 1 9 6.035C6.106 6.922 4 9.645 4 12.867c0 3.94 3.153 7.136 7.042 7.136 3.101 0 5.734-2.032 6.673-4.853Z"
+                            class="fill-sky-400/20"></path>
+                        <path
+                            d="m17.715 15.15.95.316a1 1 0 0 0-1.445-1.185l.495.869ZM9 6.035l.846.534a1 1 0 0 0-1.14-1.49L9 6.035Zm8.221 8.246a5.47 5.47 0 0 1-2.72.718v2a7.47 7.47 0 0 0 3.71-.98l-.99-1.738Zm-2.72.718A5.5 5.5 0 0 1 9 9.5H7a7.5 7.5 0 0 0 7.5 7.5v-2ZM9 9.5c0-1.079.31-2.082.845-2.93L8.153 5.5A7.47 7.47 0 0 0 7 9.5h2Zm-4 3.368C5 10.089 6.815 7.75 9.292 6.99L8.706 5.08C5.397 6.094 3 9.201 3 12.867h2Zm6.042 6.136C7.718 19.003 5 16.268 5 12.867H3c0 4.48 3.588 8.136 8.042 8.136v-2Zm5.725-4.17c-.81 2.433-3.074 4.17-5.725 4.17v2c3.552 0 6.553-2.327 7.622-5.537l-1.897-.632Z"
+                            class="fill-sky-500"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                            d="M17 3a1 1 0 0 1 1 1 2 2 0 0 0 2 2 1 1 0 1 1 0 2 2 2 0 0 0-2 2 1 1 0 1 1-2 0 2 2 0 0 0-2-2 1 1 0 1 1 0-2 2 2 0 0 0 2-2 1 1 0 0 1 1-1Z"
+                            class="fill-sky-500"></path>
+                    </svg>
+                    <svg id="theme-toggle-light-icon" viewBox="0 0 24 24" fill="none" class="hidden w-6 h-6"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" class="fill-sky-400/20 stroke-sky-500"></path>
+                        <path
+                            d="M12 4v1M17.66 6.344l-.828.828M20.005 12.004h-1M17.66 17.664l-.828-.828M12 20.01V19M6.34 17.664l.835-.836M3.995 12.004h1.01M6 6l.835.836"
+                            class="stroke-sky-500"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </header>
     <main>
+        <div
+            class="fixed h-screen inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] custom-bg -z-10">
+        </div>
         <section>
             <div class="container mx-auto  px-2 sm:px-0 mt-20 todo-app">
-                <div class="grid grid-cols-9 gap-4">
-                    <div class="lg:col-span-6 col-span-9">
-                        <div
-                            class="bg-white border  overflow-hidden border-gray-200 rounded shadow-md dark:bg-gray-800 dark:border-gray-700">
-                            <div class="milestoneDetails">
-                                <img class="milestoneImage" src="./src/images/kv.png" alt="" />
-                                <div class="m-3 lg:m-6 sm:m-4">
-                                    <h1 class="text-xl sm:text-2xl font-medium title">Module title here</h1>
-                                    <p class="text-sm sm:text-base font-medium  details">Module description here</p>
-                                </div>
-
+                <div class="flex justify-center items-center h-[580px]">
+                    <!-- select box -->
+                    <div
+                        class="select-box bg-white/60 border border-gray-200 rounded shadow-md p-4 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+                        <h1 class="font-medium text-2xl sm:text-3xl border-b dark:border-gray-700 pb-2">Tic Tac Toe</h1>
+                        <div>
+                            <div class="text-xl mt-4">Select which you want to be?</div>
+                            <div class="flex justify-center space-x-4 mt-4">
+                                <button class="x-btn btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Player
+                                    (X)</button>
+                                <button class="o-btn btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Player
+                                    (O)</button>
                             </div>
                         </div>
-
                     </div>
-                    <div class="lg:col-span-3 col-span-9">
-                        <div
-                            class="bg-white border border-gray-200 rounded shadow-md dark:bg-gray-800 dark:border-gray-700">
-                            <div class="milestones">
-                                <div class="milestone">
-                                    <div class="flex items-center">
-                                        <div class="-mt-1 mr-2 checkbox"><input type="checkbox" />
-                                        </div>
-                                        <div>
-                                            <p>
-                                                Milestone 1 name
-                                                <span><i class="fas fa-chevron-down text-xs pl-1"></i></span>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="hidden_panel">
-                                        <div class="module border-b border-gray-200 dark:border-gray-600">
-                                            <p>Module Name</p>
-                                        </div>
-                                    </div>
+                    <!-- bg-gradient-to-tr from-purple-900 via-cyan-600 to-blue-50 -->
+                    <!-- playboard section -->
+                    <div class="play-box hidden">
+                        <div class="play-area transition duration-700">
+                            <section class="grid grid-cols-3 gap-2 sm:gap-4 ">
+                                <div
+                                    class="players col-span-3 flex justify-between bg-white/60 border border-gray-200 rounded shadow p-2 dark:bg-gray-800 dark:border-gray-700">
+                                    <span class="Xturn text-center px-6 py-2 rounded-md">X's Turn</span>
+                                    <span class="Oturn bg-blue-600 text-white text-center px-6 py-2 rounded-md">O's Turn</span>
                                 </div>
-                            </div>
-                            <div class="doneList">
-                                <!-- done list will load here -->
-                            </div>
-
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                                <div class="g-box"></div>
+                            </section>
                         </div>
+                    </div>
+                    <!-- result box -->
+                    <div class="result-box hidden bg-white/60 border border-gray-200 rounded shadow-md p-4 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
+                        <div class="won-text text-2xl font-medium mb-6">Player <span>X</span> won the Game!</div>
+                        <div class="text-center"><button class="btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Replay</button></div>
                     </div>
 
                 </div>
+
             </div>
         </section>
 
@@ -107,7 +109,7 @@
         <section>
             <div class="container mx-auto  px-2 sm:px-0">
                 <div
-                    class="w-full lg:w-3/4 mx-auto bg-white border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+                    class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
                     <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified
                         when a
@@ -135,8 +137,7 @@
                             </div>
                             <div class="revue-form-actions">
                                 <input type="submit" value="Subscribe"
-                                    class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    name="member[subscribe]" id="member_submit">
+                                    class="btn-primary rounded-lg text-sm px-5 py-2.5 ">
                             </div>
                         </div>
                         <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">By
@@ -155,9 +156,7 @@
     </main>
 
     <footer>
-
-        <div class="container mx-auto p-2 bg-white sm:p-4 dark:bg-gray-900">
-
+        <div class="container mx-auto p-2 bg-transparent sm:p-4">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="javascript:;" class="flex items-center justify-center">
                     <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
@@ -207,21 +206,17 @@
                 </div>
             </div>
             <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-
             <div class="text-center">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="javascript:;"
                         class="hover:underline">SA™</a>. All Rights Reserved.
                 </span>
             </div>
         </div>
-
-
     </footer>
 
 
     <script src="./src/js/color.js"></script>
-    <script src="./src/js/data.js"></script>
-    <script src="./src/js/cource-module.js"></script>
+    <script src="./src/js/tic-tac-toe.js"></script>
 </body>
 
 </html>

@@ -1,2 +1,13 @@
 # dependencies
-node_modules/
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.env.local

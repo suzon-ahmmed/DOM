@@ -1,6 +1,5 @@
 @tailwind base;
 @tailwind components;
-@tailwind utilities;
 
 ::-webkit-scrollbar {
   width: 6px;
@@ -28,10 +27,19 @@ body {
 section {
   @apply my-5 px-2 xl:px-0 sm:my-8;
 }
-.hero-image path {
-  @apply fill-gray-100 dark:fill-slate-800;
+/* custom class */
+.dark .custom-bg {
+  background-image: url(../images/hero-dark@90.dba36cdf.jpg);
+  background-size: 86.125rem;
 }
-
+.custom-bg {
+  background-image: url(../images/hero@75.b2469a49.jpg);
+  background-size: 150rem;
+}
+.btn-primary {
+  @apply cursor-pointer focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium bg-transparent border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-700 dark:hover:shadow-blue-600 
+  duration-[1000ms,700ms] transition-[color,box-shadow];
+}
 /* style for todo app */
 .todo-app .delete {
   @apply float-right py-1 px-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-600 focus:ring-2 focus:outline-none focus:ring-red-400 dark:bg-red-700 dark:hover:bg-red-600 dark:focus:ring-red-500;
@@ -93,3 +101,11 @@ input[type="checkbox"] {
 .show {
   @apply max-h-[400px];
 }
+
+/* tic tac game */
+.g-box{
+  @apply w-20 h-20 bg-white/60 border border-gray-200 rounded shadow-md p-2 dark:bg-gray-800 dark:border-gray-700 flex items-center justify-center;
+}
+
+
+@tailwind utilities;
