@@ -1,6 +1,6 @@
 @tailwind base;
 @tailwind components;
-
+@tailwind utilities;
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -27,85 +27,103 @@ body {
 section {
   @apply my-5 px-2 xl:px-0 sm:my-8;
 }
-/* custom class */
-.dark .custom-bg {
-  background-image: url(../images/hero-dark@90.dba36cdf.jpg);
-  background-size: 86.125rem;
-}
-.custom-bg {
-  background-image: url(../images/hero@75.b2469a49.jpg);
-  background-size: 150rem;
-}
-.btn-primary {
-  @apply cursor-pointer focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium bg-transparent border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-700 dark:hover:shadow-blue-600 
+
+@layer components {
+  /* custom class */
+  .dark .custom-bg {
+    background-image: url(../images/hero-dark@90.dba36cdf.jpg);
+    background-size: 86.125rem;
+  }
+  .custom-bg {
+    background-image: url(../images/hero@75.b2469a49.jpg);
+    background-size: 150rem;
+  }
+  .btn-primary {
+    @apply cursor-pointer focus:ring-4 focus:ring-blue-300 dark:focus:ring-blue-800 font-medium bg-transparent border-gray-200 dark:border-gray-700 border hover:text-white  hover:shadow-[inset_13rem_0_0_0] hover:shadow-blue-700 dark:hover:shadow-blue-600 
   duration-[1000ms,700ms] transition-[color,box-shadow];
-}
-/* style for todo app */
-.todo-app .delete {
-  @apply float-right py-1 px-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-600 focus:ring-2 focus:outline-none focus:ring-red-400 dark:bg-red-700 dark:hover:bg-red-600 dark:focus:ring-red-500;
-}
-.todo-app ul li {
-  @apply py-2 border-dashed border-b-2;
-}
-.todo-app ul li input {
-  @apply w-4 h-4 mr-2 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
-}
+  }
+  /* style for todo app */
+  .todo-app .delete {
+    @apply float-right py-1 px-2 text-sm font-medium text-center text-white bg-red-700 rounded-lg hover:bg-red-600 focus:ring-2 focus:outline-none focus:ring-red-400 dark:bg-red-700 dark:hover:bg-red-600 dark:focus:ring-red-500;
+  }
+  .todo-app ul li {
+    @apply py-2 border-dashed border-b-2;
+  }
+  .todo-app ul li input {
+    @apply w-4 h-4 mr-2 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
 
-.project-card:hover .project-name {
-  opacity: 1;
-  background-color: rgba(0, 0, 0, 0.295);
-}
+  .project-card:hover .project-name {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.295);
+  }
 
-/* style for course management system */
-.milestoneDetails img {
-  @apply w-full h-auto object-cover transition-opacity duration-700 ease-linear;
-}
-.checkbox input {
-  @apply w-4 h-4 mr-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
-}
+  /* style for course management system */
+  .milestoneDetails img {
+    @apply w-full h-auto object-cover transition-opacity duration-700 ease-linear;
+  }
+  .checkbox input {
+    @apply w-4 h-4 mr-4 text-blue-600 bg-gray-100 rounded border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600;
+  }
 
-input[type="checkbox"] {
-  margin-right: 5px;
-  vertical-align: middle;
-}
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
 
-.milestones,
-.doneList {
-  @apply cursor-pointer max-h-[530px] overflow-auto;
-}
+  .milestones,
+  .doneList {
+    @apply cursor-pointer max-h-[530px] overflow-auto;
+  }
 
-.doneList {
-  /* @apply mt-4; */
-}
+  .doneList {
+    /* @apply mt-4; */
+  }
 
-.milestone,
-.module {
-  @apply text-sm m-2 p-2;
-}
+  .milestone,
+  .module {
+    @apply text-sm m-2 p-2;
+  }
 
-/* .border-b {
+  /* .border-b {
   @apply border-dashed border-b-2 border-gray-200;
 } */
 
-.hidden_panel {
-  @apply max-h-0 overflow-hidden;
-  -webkit-transition: max-height 0.8s;
-  -moz-transition: max-height 0.8s;
-  transition: max-height 0.8s;
+  .hidden_panel {
+    @apply max-h-0 overflow-hidden;
+    -webkit-transition: max-height 0.8s;
+    -moz-transition: max-height 0.8s;
+    transition: max-height 0.8s;
+  }
+
+  .active {
+    @apply font-bold;
+  }
+
+  .show {
+    @apply max-h-[400px];
+  }
+
+  /* tic tac game */
+  .g-box {
+    @apply w-20 h-20 bg-white/60 border text-4xl border-gray-200 rounded shadow-md p-2 dark:bg-gray-800 dark:border-gray-700 flex items-center justify-center;
+  }
+  .players {
+    @apply col-span-3 flex justify-between bg-white/60 border border-gray-200 rounded shadow p-2 dark:bg-gray-800 dark:border-gray-700;
+  }
+  .players span {
+    @apply text-center px-6 py-2 rounded-md;
+  }
+  .players .active span:last-child {
+    @apply bg-blue-600 text-white;
+  }
+
+  /* calculator design  */
+  .calculator-buttons .btn {
+    @apply border border-gray-200 rounded shadow-sm dark:bg-gray-800 dark:border-gray-700 text-xl py-5 font-medium cursor-pointer;
+  }
+  .calculator-buttons .btn:active {
+    transform: translateY(2px);
+    /* transform: scale(0.95); */
+  }
 }
-
-.active {
-  @apply font-bold;
-}
-
-.show {
-  @apply max-h-[400px];
-}
-
-/* tic tac game */
-.g-box{
-  @apply w-20 h-20 bg-white/60 border border-gray-200 rounded shadow-md p-2 dark:bg-gray-800 dark:border-gray-700 flex items-center justify-center;
-}
-
-
-@tailwind utilities;

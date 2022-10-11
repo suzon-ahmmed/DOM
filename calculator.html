@@ -5,15 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="./src/images/logo.svg">
-    <title>Tic Tac Toe</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Learn DOM</title>
     <link rel="stylesheet" href="./src/css/style.css">
-    <style>
 
-    </style>
 </head>
 
 <body>
@@ -29,6 +23,7 @@
                 </a>
 
             </div>
+
             <div class="flex items-center space-x-6 text-sm font-semibold">
                 <button id="theme-toggle" type="button"
                     class="text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
@@ -60,50 +55,41 @@
             class="fixed h-screen inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] custom-bg -z-10">
         </div>
         <section>
-            <div class="container mx-auto  px-2 sm:px-0 mt-20 todo-app">
+            <div class="container mx-auto  px-2 sm:px-0 mt-20">
                 <div class="flex justify-center items-center h-[580px]">
-                    <!-- select box -->
-                    <div
-                        class="select-box bg-white/60 border border-gray-200 rounded shadow-md p-4 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-                        <h1 class="font-medium text-2xl sm:text-3xl border-b dark:border-gray-700 pb-2">Tic Tac Toe</h1>
-                        <div>
-                            <div class="text-xl mt-4">Select which you want to be?</div>
-                            <div class="flex justify-center space-x-4 mt-4">
-                                <button class="x-btn btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Player
-                                    (X)</button>
-                                <button class="o-btn btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Player
-                                    (O)</button>
-                            </div>
+                    <form
+                        class="bg-white/50 border border-gray-200 rounded shadow-md p-6 dark:bg-gray-800 dark:border-gray-700 w-[330px]">
+                        <div id="display"
+                            class="w-full h-[54px] mb-6 border border-gray-200 rounded shadow-sm dark:border-gray-700  text-right p-3 font-medium text-xl">
                         </div>
-                    </div>
-                    <!-- bg-gradient-to-tr from-purple-900 via-cyan-600 to-blue-50 -->
-                    <!-- playboard section -->
-                    <div class="play-box hidden">
-                        <div class="play-area transition duration-700">
-                            <section class="grid grid-cols-3 gap-2 sm:gap-4 ">
-                                <div class="players">
-                                    <span class="Xturn">X's Turn</span>
-                                    <span class="Oturn">O's Turn</span>
-                                </div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                                <div class="g-box"></div>
-                            </section>
+                        <div class="grid grid-rows-5 grid-flow-col gap-2 calculator-buttons">
+
+                            <input class="btn" type="button" value="C" id="clear">
+                            <input class="btn" type="button" value="1" id="1">
+                            <input class="btn" type="button" value="4" id="4">
+                            <input class="btn" type="button" value="7" id="7">
+                            <input class="btn" type="button" value="(" id="(">
+
+                            <input class="btn" type="button" value="<" id="backspace">
+                            <input class="btn" type="button" value="2" id="2">
+                            <input class="btn" type="button" value="5" id="5">
+                            <input class="btn" type="button" value="8" id="8">
+                            <input class="btn" type="button" value="0" id="0">
+
+                            <input class="btn" type="button" value="." id=".">
+                            <input class="btn" type="button" value="3" id="3">
+                            <input class="btn" type="button" value="6" id="6">
+                            <input class="btn" type="button" value="9" id="9">
+                            <input class="btn" type="button" value=")" id=")">
+
+                            <input class="btn" type="button" value="&divide;" id="/">
+                            <input class="btn" type="button" value="&times;" id="*">
+                            <input class="btn" type="button" value="-" id="-">
+                            <input class="btn" type="button"  value="+" id="+">
+                            <input class="btn" type="button"  value="=" id="=">
                         </div>
-                    </div>
-                    <!-- result box -->
-                    <div
-                        class="result-box hidden bg-white/60 border border-gray-200 rounded shadow-md p-4 sm:p-6 dark:bg-gray-800 dark:border-gray-700">
-                        <div class="won-text text-2xl font-medium mb-6">Player <span>X</span> won the Game!</div>
-                        <div class="text-center"><button
-                                class="btn-primary px-8 pt-[6px] pb-[10px] rounded-md text-xl">Replay</button></div>
-                    </div>
+
+                    </form>
 
                 </div>
 
@@ -112,7 +98,7 @@
 
 
         <section>
-            <div class="container mx-auto my-12 sm:my-20  px-2 sm:px-0">
+            <div class="container mx-auto my-12 sm:my-20 px-2 sm:px-0">
                 <div
                     class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
                     <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
@@ -142,7 +128,8 @@
                             </div>
                             <div class="revue-form-actions">
                                 <input type="submit" value="Subscribe"
-                                    class="btn-primary rounded-lg text-sm px-5 py-2.5 ">
+                                    class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                    name="member[subscribe]" id="member_submit">
                             </div>
                         </div>
                         <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">By
@@ -161,7 +148,7 @@
     </main>
 
     <footer>
-        <div class="container mx-auto p-2 bg-transparent sm:p-4">
+        <div class="container mx-auto p-2 bg-transparent sm:p-4 dark:bg-gray-900">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="javascript:;" class="flex items-center justify-center">
                     <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
@@ -211,6 +198,7 @@
                 </div>
             </div>
             <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
+
             <div class="text-center">
                 <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="javascript:;"
                         class="hover:underline">SA™</a>. All Rights Reserved.
@@ -221,7 +209,7 @@
 
 
     <script src="./src/js/color.js"></script>
-    <script src="./src/js/tic-tac-toe.js"></script>
+    <script src="./src/js/calculator.js"></script>
 </body>
 
 </html>

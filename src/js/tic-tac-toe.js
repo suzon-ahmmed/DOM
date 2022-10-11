@@ -1,13 +1,13 @@
 const selectBox = document.querySelector(".select-box");
-selectXBtn = selectBox.querySelector(".x-btn");
-selectOBtn = selectBox.querySelector(".o-btn");
-playBox = document.querySelector(".play-box");
-gBox = document.querySelectorAll(".g-box");
-players = document.querySelectorAll(".players span");
+const selectXBtn = selectBox.querySelector(".x-btn");
+const selectOBtn = selectBox.querySelector(".o-btn");
+const playBox = document.querySelector(".play-box");
+const gBox = document.querySelectorAll(".g-box");
+const players = document.querySelector(".players");
 
 window.onload = () => {
   for (let i = 0; i < gBox.length; i++) {
-    gBox[i].setAttribute("onclick", "clickedBox(this)")
+    gBox[i].setAttribute("onclick", "clickedBox(this)");
   }
 
   selectXBtn.onclick = () => {
@@ -17,11 +17,23 @@ window.onload = () => {
   selectOBtn.onclick = () => {
     selectBox.classList.add("hidden");
     playBox.classList.remove("hidden");
-    // players[1].setAttribute("class", "")
+    players.setAttribute("class", "players active player");
   };
 };
 
-// function 
+let XIcon = "fas fa-times",
+  OIcon = "far fa-circle";
+
+function clickedBox(element) {
+  if (players.classList.contains("player")) {
+    element.innerHTML = `<i class="${OIcon}"></i>`;
+    players.classList.add("active");
+  } else {
+    element.innerHTML = `<i class="${XIcon}"></i>`;
+  }
+}
+
+// function
 
 // const selectBox = document.querySelector(".select-box"),
 // selectBtnX = selectBox.querySelector(".options .playerX"),

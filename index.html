@@ -68,7 +68,7 @@
 
     <section>
       <div class="container mx-auto">
-        <div class="p-4 my-3 bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded">
+        <div class="p-4 my-3 bg-gray-50 dark:bg-slate-800 border border-gray-300 rounded">
           <div class="text-sm font-bold">
             <div>
               Updated on: <span id="updated-date">03/August/2022</span>
@@ -138,27 +138,26 @@
           </a>
           <a href="tic-tac-toe-game.html">
             <div
-              class="h-[240px] flex justify-center overflow-hidden bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
+              class="h-[240px] flex justify-center overflow-hidden bg-gray-50 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
               <img src="./src/images/logo.svg"
                 class="w-full transition duration-700 ease-in-out hover:scale-125 hover:rotate-6" alt="" />
             </div>
           </a>
-          <a href="javascript:;">
+          <a href="calculator.html">
             <div
-              class="relative group h-[240px] overflow-hidden m-auto bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
-              <img class="object-cover w-full h-full transform duration-700 backdrop-opacity-100"
-                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1650&q=80" />
+              class="relative group h-[240px] overflow-hidden m-auto bg-gray-50 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
+              <img class="p-4 w-full h-full"
+                src="./src/images/calculator_re_alsc.svg" />
               <div
                 class="absolute bg-gradient-to-t from-black w-full h-full transform duration-500 inset-y-3/4 group-hover:-inset-y-0 flex flex-col items-center">
                 <div class="absolute w-full flex place-content-center">
                   <p class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-white mt-2">
-                    Team work
+                    Calculator
                   </p>
                 </div>
                 <div class="absolute w-full flex place-content-center mt-6">
                   <p class="font-sans text-center w-4/5 text-white mt-5">
-                    Collaborative effort of a group to achieve a common goal
-                    the most effective and efficient way!
+                    This is a simple basic calculator with memory functions similar to a small handheld calculator. Use this basic calculator online for math with addition, subtraction, division and multiplication.
                   </p>
                 </div>
                 <button class="absolute bottom-4 bg-white text-black font-bold rounded-lg h-10 w-48">
@@ -209,55 +208,54 @@
         </div>
       </div>
     </section>
+
     <section>
-      <div class="container mx-auto">
+      <div class="container mx-auto my-12 sm:my-20   px-2 sm:px-0">
         <div
-          class="p-4 my-8 bg-white border border-gray-200 rounded shadow-md sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700"
-          aria-label="Subscribe to the newsletter">
-          <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">
-            Get more updates...
-          </h3>
-          <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">
-            Do you want to get notified when a new component is added to DOM?
-            Sign up for our newsletter and you'll be among the first to find
-            out about new features, components, versions, and tools.
-          </p>
+          class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
+          <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified
+            when a
+            new
+            component is added to DOM? Sign up for our newsletter and you'll be among the first to find out
+            about
+            new features, components, versions, and tools.</p>
           <form action="" method="post" id="revue-form" name="revue-form">
             <div class="flex items-end mb-3">
               <div class="relative w-full mr-3 revue-form-group">
+
                 <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
                   <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"
                     xmlns="http://www.w3.org/2000/svg">
-                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
+                    </path>
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                 </div>
                 <input
                   class="revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                  placeholder="Your email address..." type="email" name="member[email]" id="member_email" required="" />
+                  placeholder="Your email address..." type="email" name="member[email]" id="member_email" required="">
               </div>
               <div class="revue-form-actions">
                 <input type="submit" value="Subscribe" class="btn-primary rounded-lg text-sm px-5 py-2.5 ">
               </div>
             </div>
-            <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">
-              By subscribing, you agree with Revue’s
-              <a rel="nofollow" href="javascript:;" class="text-blue-600 hover:underline dark:text-blue-500">Terms of
-                Service</a>
-              and
-              <a rel="nofollow" class="text-blue-600 hover:underline dark:text-blue-500" href="javascript:;">Privacy
-                Policy</a>.
-            </div>
+            <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">By
+              subscribing,
+              you
+              agree with Revue’s <a rel="nofollow" href="javascript:;"
+                class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a> and <a rel="nofollow"
+                class="text-blue-600 hover:underline dark:text-blue-500" href="javascript:;">Privacy
+                Policy</a>.</div>
           </form>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
-
-    <div class="container mx-auto p-2 sm:p-4 bg-transparent">
-
+    <div class="container mx-auto p-2 bg-transparent sm:p-4">
       <div class="sm:flex sm:items-center sm:justify-between">
         <a href="javascript:;" class="flex items-center justify-center">
           <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
@@ -307,15 +305,12 @@
         </div>
       </div>
       <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
-
       <div class="text-center">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="javascript:;"
             class="hover:underline">SA™</a>. All Rights Reserved.
         </span>
       </div>
     </div>
-
-
   </footer>
 
   <script src="./src/js/color.js"></script>
