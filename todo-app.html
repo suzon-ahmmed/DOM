@@ -52,12 +52,12 @@
    </header>
    <main>
       <div
-            class="fixed h-screen inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] custom-bg -z-10">
-        </div>
+         class="fixed h-screen inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] custom-bg -z-10">
+      </div>
       <section>
-         <div class="container mx-auto  px-2 sm:px-0 mt-20 todo-app">
+         <div class="container min-h-[calc(100vh-265px)] flex items-center justify-center mx-auto px-2 sm:px-0 mt-20 todo-app">
             <div
-               class="w-full lg:w-3/4 mx-auto bg-white border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
+               class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800/50 dark:border-gray-700">
                <div class="flex justify-center">
                   <a href="index.html" class="flex mb-2">
                      <img src="./src/images/logo.svg" width="40px" alt="">
@@ -68,17 +68,17 @@
 
                <div class="grid grid-cols-2 gap-4">
                   <div
-                     class="col-span-2 bg-white flex items-center justify-center text-gray-800 p-1  border border-gray-200 rounded  mt-4">
+                     class="col-span-2 bg-white/50 dark:bg-gray-800/50  flex items-center justify-center p-1  border border-gray-200 rounded  mt-4">
                      <form class="flex flex-wrap justify-center items-center" onsubmit="return validateForm()">
                         <label for="new-task" class="font-semibold">Task Name: </label>
-                        <input type="text" id="new-task" required class="p-1 mx-2 my-2 rounded" />
+                        <input type="text" id="new-task" required class="p-1 mx-2 my-2 rounded bg-transparent" />
                         <input type="submit" id="addTask" value="Add Task"
-                           class="py-1 px-2 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-gray-700 focus:ring-2 focus:outline-none focus:ring-gray-400 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-500" />
+                           class="py-1 px-2 text-sm  btn-primary rounded-md" />
                      </form>
                   </div>
                   <div
-                     class="col-span-2 sm:col-span-1 bg-white text-gray-800 p-2 sm:p-4 md:p-6 border border-gray-200 rounded">
-                     <h2 class="text-2xl font-semibold text-center pb-2 border-b-2 border-b-slate-800">Incomplete Tasks
+                     class="col-span-2 sm:col-span-1 bg-transparent  p-2 sm:p-4 md:p-6 border border-gray-200 rounded">
+                     <h2 class="text-2xl font-semibold text-center pb-2 border-b-2 border-b-slate-800 dark:border-b-slate-200">Incomplete Tasks
                      </h2>
                      <ul id="incomplete-list">
                         <li class="item">
@@ -93,8 +93,8 @@
                      </ul>
                   </div>
                   <div
-                     class="col-span-2 sm:col-span-1 bg-white text-gray-800 p-2 sm:p-4 md:p-6 border border-gray-200 rounded ">
-                     <h2 class="text-2xl font-semibold text-center pb-2 border-b-2 border-b-slate-800">Completed Tasks
+                     class="col-span-2 sm:col-span-1 bg-transparent p-2 sm:p-4 md:p-6 border border-gray-200 rounded ">
+                     <h2 class="text-2xl font-semibold text-center pb-2 border-b-2 border-b-slate-800 dark:border-b-slate-200">Completed Tasks
                      </h2>
                      <ul>
                         <ul id="complete-list">
@@ -111,48 +111,7 @@
       </section>
 
 
-      <section>
-         <div class="container mx-auto my-12 sm:my-20 px-2 sm:px-0">
-            <div
-               class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
-               <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
-               <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified when a
-                  new
-                  component is added to DOM? Sign up for our newsletter and you'll be among the first to find out about
-                  new features, components, versions, and tools.</p>
-               <form action="" method="post" id="revue-form" name="revue-form">
-                  <div class="flex items-end mb-3">
-                     <div class="relative w-full mr-3 revue-form-group">
 
-                        <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                           <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20"
-                              xmlns="http://www.w3.org/2000/svg">
-                              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-                              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                           </svg>
-                        </div>
-                        <input
-                           class="revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                           placeholder="Your email address..." type="email" name="member[email]" id="member_email"
-                           required="">
-                     </div>
-                     <div class="revue-form-actions">
-                        <input type="submit" value="Subscribe"
-                           class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                           name="member[subscribe]" id="member_submit">
-                     </div>
-                  </div>
-                  <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">By subscribing,
-                     you
-                     agree with Revue’s <a rel="nofollow" href="javascript:;"
-                        class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a> and <a
-                        rel="nofollow" class="text-blue-600 hover:underline dark:text-blue-500"
-                        href="javascript:;">Privacy
-                        Policy</a>.</div>
-               </form>
-            </div>
-         </div>
-      </section>
 
    </main>
 

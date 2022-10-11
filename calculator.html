@@ -56,9 +56,9 @@
         </div>
         <section>
             <div class="container mx-auto  px-2 sm:px-0 mt-20">
-                <div class="flex justify-center items-center h-[580px]">
+                <div class="min-h-[calc(100vh-265px)] flex items-center justify-center ">
                     <form
-                        class="bg-white/50 border border-gray-200 rounded shadow-md p-6 dark:bg-gray-800 dark:border-gray-700 w-[330px]">
+                        class="bg-white/50 border border-gray-200 rounded shadow-md p-6 dark:bg-gray-800/50 dark:border-gray-700 w-[330px]">
                         <div id="display"
                             class="w-full h-[54px] mb-6 border border-gray-200 rounded shadow-sm dark:border-gray-700  text-right p-3 font-medium text-xl">
                         </div>
@@ -97,58 +97,10 @@
         </section>
 
 
-        <section>
-            <div class="container mx-auto my-12 sm:my-20 px-2 sm:px-0">
-                <div
-                    class="w-full lg:w-3/4 mx-auto bg-white/50 border border-gray-200 rounded shadow-md p-4 sm:p-6 lg:p-8 dark:bg-gray-800 dark:border-gray-700">
-                    <h3 class="mb-3 text-xl font-medium text-gray-900 dark:text-white">Get more updates...</h3>
-                    <p class="mb-5 text-sm font-medium text-gray-500 dark:text-gray-300">Do you want to get notified
-                        when a
-                        new
-                        component is added to DOM? Sign up for our newsletter and you'll be among the first to find out
-                        about
-                        new features, components, versions, and tools.</p>
-                    <form action="" method="post" id="revue-form" name="revue-form">
-                        <div class="flex items-end mb-3">
-                            <div class="relative w-full mr-3 revue-form-group">
-
-                                <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
-                                    <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor"
-                                        viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                                        <path
-                                            d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z">
-                                        </path>
-                                        <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
-                                    </svg>
-                                </div>
-                                <input
-                                    class="revue-form-field bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-                                    placeholder="Your email address..." type="email" name="member[email]"
-                                    id="member_email" required="">
-                            </div>
-                            <div class="revue-form-actions">
-                                <input type="submit" value="Subscribe"
-                                    class="cursor-pointer text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    name="member[subscribe]" id="member_submit">
-                            </div>
-                        </div>
-                        <div class="text-sm font-medium text-gray-500 revue-form-footer dark:text-gray-300">By
-                            subscribing,
-                            you
-                            agree with Revue’s <a rel="nofollow" href="javascript:;"
-                                class="text-blue-600 hover:underline dark:text-blue-500">Terms of Service</a> and <a
-                                rel="nofollow" class="text-blue-600 hover:underline dark:text-blue-500"
-                                href="javascript:;">Privacy
-                                Policy</a>.</div>
-                    </form>
-                </div>
-            </div>
-        </section>
-
     </main>
 
     <footer>
-        <div class="container mx-auto p-2 bg-transparent sm:p-4 dark:bg-gray-900">
+        <div class="container mx-auto p-2 bg-transparent sm:p-4">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="javascript:;" class="flex items-center justify-center">
                     <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
