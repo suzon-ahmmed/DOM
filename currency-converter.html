@@ -8,7 +8,6 @@
     <link rel="icon" type="image/x-icon" href="./src/images/logo.svg">
     <title>Currency Converter App</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/style.css">
 </head>
@@ -62,7 +61,7 @@
                 <div class="min-h-[calc(100vh-265px)] flex items-center justify-center ">
                     <form
                         class="bg-white/50 border border-gray-200 rounded shadow-md p-6 dark:bg-gray-800/50 dark:border-gray-700 w-[330px]">
-                        <h1 class="font-medium text-xl text-center mb-4">Currency Converter App</h1>
+                        <h1 class="font-medium text-xl text-center mb-4 text-blue-500">Currency Converter App</h1>
                         <div>
                             <p class="text-lg font-medium mb-2">Enter amaout</p>
                             <input type="text" class="bg-transparent w-full rounded-md">
@@ -71,22 +70,20 @@
                             <div class="from">
                                 <h3>From </h3>
                                 <div>
-                                    <select id="country" class="w-[40%]">
-                                        <option value="0" data-imagesrc="./src/images/flags/4x3/us.svg"
-                                            data-description="">USA</option>
-                                        <option value="1" data-imagesrc="./src/images/flags/4x3/bd.svg"
-                                            data-description="">Bangladesh</option>
-                                        <option value="2" data-imagesrc="./src/images/flags/4x3/tr.svg"
-                                            data-description="">Turkey</option>
-                                    </select>
+                                    <select class="bg-transparent rounded-md"></select>
                                 </div>
 
                             </div>
-                            <i class="fa-solid fa-arrows-rotate cursor-pointer" onclick=""></i>
-                            <div class="to">To</div>
+                            <i class="fa-solid fa-arrows-rotate cursor-pointer mt-6 icon"></i>
+                            <div class="to">
+                                <h3>To </h3>
+                                <div>
+                                    <select class="bg-transparent rounded-md"></select>
+                                </div>
+                            </div>
                         </div>
-                        <div class="font-medium my-4">Getting exchange rate... </div>
-                        <div class="text-center mt-6"><button class="btn-primary px-4 py-2 rounded-md">Get Exchange
+                        <div class="font-medium my-4 exchange-rate">Getting exchange rate... </div>
+                        <div class="text-center mt-6"><button class="btn-primary px-4 py-2 rounded-md text-blue-500">Get Exchange
                                 Rate</button></div>
 
                     </form>
@@ -154,12 +151,7 @@
             </div>
         </div>
     </footer>
-    <!-- jQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
-        crossorigin=" anonymous" referrerpolicy="no-referrer"></script>
-    <script type="text/javascript"
-        src="https://cdn.rawgit.com/prashantchaudhary/ddslick/master/jquery.ddslick.min.js"></script>
+
     <script src="./src/js/color.js"></script>
     <script src="./src/js/currency-converter.js"></script>
 </body>

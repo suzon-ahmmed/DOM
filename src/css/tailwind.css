@@ -128,66 +128,7 @@ section {
   }
 
   /* dd-select */
-  .dd-container {
-    width: 40% !important;
-  }
-
-  .dd-select {
-    width: 40% !important;
-    border: none;
-    background: #fff !important;
-    padding: 2px 0;
-  }
-  .dd-selected {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    padding: 5px 0;
-  }
-  .dd-option-image,
-  .dd-selected-image {
-    width: 18px;
-  }
-  .dd-select .dd-selected .dd-selected-text {
-    font-size: 14px;
-    color: #000;
-    line-height: 22px !important;
-  }
-  .dd-options {
-    width: 114% !important;
-    margin-left: -14px;
-    border: none;
-    -webkit-box-shadow: 1px 3px 16px 4px #b7c0d36e;
-    box-shadow: 1px 3px 16px 4px #b7c0d36e;
-    border-radius: 0.25rem;
-  }
-  .dd-options li {
-    margin-right: 0px;
-  }
-  .dd-options li .dd-option {
-    padding: 8px 15px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    height: 32px !important;
-    border: none;
-  }
-  .dd-options li .dd-option img {
-    width: 20px;
-    margin-right: 8px;
-  }
-  .dd-options li .dd-option .dd-option-text {
-    font-size: 14px;
-    padding-right: 5px;
-    line-height: 22px !important;
-  }
-  .dd-pointer {
-    right: 0px;
+  .dd-option {
+    @apply flex items-center h-10;
   }
 }
