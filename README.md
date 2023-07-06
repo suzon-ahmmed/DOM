@@ -32,7 +32,6 @@ Please follow the below instructions to run different branches of this repositor
 
 ## Contact us
 [![LinkedIn][linkedin-shield]][linkedin-url]
-[![mail][mail-shield]][mail-url]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 
