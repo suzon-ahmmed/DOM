@@ -2186,6 +2186,10 @@ section {
   background-color: rgb(31 41 55 / 0.5);
 }
 
+.dark .dark\:bg-slate-800\/90 {
+  background-color: rgb(30 41 59 / 0.9);
+}
+
 .dark .dark\:bg-transparent {
   background-color: transparent;
 }
