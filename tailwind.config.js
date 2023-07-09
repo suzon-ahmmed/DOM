@@ -15,10 +15,14 @@ module.exports = {
         behance: "#2557ff",
         youtube: "#FF0000",
       },
+      backgroundImage: {
+        s1: "url(../images/bg-cover.png), linear-gradient(90.42deg, #cc00c415 8.94%, #7d2ae815 54.02%, #00c4cc15 95.49%)",
+        s2: "url(../images/bg-cover.png)",
+      },
     },
   },
   container: {
     center: true,
   },
-  plugins: [require('flowbite/plugin')],
-}
+  plugins: [require("flowbite/plugin")],
+};
