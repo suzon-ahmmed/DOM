@@ -1,9 +1,8 @@
-# Javascript
-Learn javascript and create projects.
+# DOM
+Learn javascript DOM and create projects.
 <!-- PROJECT Image -->
 <br />
 <!-- <img src="https://avatars.githubusercontent.com/u/73503432?v=4" alt="Logo"/> -->
-
 
 
 <!-- HOW TO RUN -->
@@ -16,11 +15,11 @@ Please follow the below instructions to run different branches of this repositor
 
 2. Clone this repository -
     ```sh
-    git clone https://github.com/suzon-ahmmed/Javascript.git
+    git clone https://github.com/suzon-ahmmed/DOM.git
     ```
 3. Go to the cloned project directory
     ```sh
-    cd Javascript
+    cd DOM
     ```
 4. Install npm -
     ```sh
