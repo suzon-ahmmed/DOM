@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" type="image/x-icon" href="./src/images/logo.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css">
   <title>JS Projects</title>
   <link rel="stylesheet" href="./src/css/style.css" />
 </head>
@@ -55,8 +56,9 @@
       class="w-full h-[310px] sm:h-[390px] relative flex flex-cal items-center justify-center custom-bg bg-center bg-cover">
       <div class="z-10 text-blue-500 dark:text-blue-200">
         <div class="text-4xl md:text-6xl font-bold italic uppercase">javascript</div>
-        <div class="text-4xl md:text-6xl font-bold italic uppercase text-center">Projects</div>
-      </div>
+        <div class="text-4xl md:text-6xl font-bold italic uppercase text-center">Projects
+          <i class="ti ti-external-link"></i>
+        </div>
 
     </section>
 
@@ -81,31 +83,34 @@
     <section>
       <div class="container mx-auto">
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
-          <a href="todo-app.html" target="_blank">
+          <a href="todo-app.html">
             <div
-              class="h-[240px] group relative flex justify-center overflow-hidden bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
-              <img src="./src/images/todo.svg" class="w-full p-4 h-full" alt="" />
-              <div
-                class="absolute hover:bg-gradient-to-t from-black  w-full h-full transform duration-500 inset-y-44 group-hover:-inset-y-0 flex flex-col items-center">
-                <div class="absolute w-full flex place-content-center">
-                  <p
-                    class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-blue-700 dark:text-white mt-4">
-                    To Do App
-                  </p>
+              class="group bg-gray-50 dark:bg-slate-800 border border-gray-300 rounded flex w-full flex-col self-center overflow-hidden">
+              <a class="relative mx-3 mt-3 flex h-44 overflow-hidden rounded-xl" href="todo-app.html">
+                <img class="peer absolute top-0 right-0 h-full w-full object-cover" src="./src/images/todo.svg" />
+                <img
+                  class="peer peer-hover:right-0 absolute top-0 -right-96 h-full w-full object-cover transition-all delay-100 duration-1000 hover:right-0"
+                  src="./src/images/todoapp.PNG" alt="product image" />
+                <svg
+                  class="group-hover:animate-ping group-hover:opacity-50 peer-hover:opacity-0 pointer-events-none absolute inset-x-0 bottom-5 mx-auto text-3xl text-blue-600 transition-opacity"
+                  xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+                  preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32">
+                  <path fill="currentColor"
+                    d="M2 10a4 4 0 0 1 4-4h20a4 4 0 0 1 4 4v10a4 4 0 0 1-2.328 3.635a2.996 2.996 0 0 0-.55-.756l-8-8A3 3 0 0 0 14 17v7H6a4 4 0 0 1-4-4V10Zm14 19a1 1 0 0 0 1.8.6l2.7-3.6H25a1 1 0 0 0 .707-1.707l-8-8A1 1 0 0 0 16 17v12Z" />
+                </svg>
+              </a>
+              <div class="mb-3 px-5">
+                <a href="todo-app.html">
+                  <h5 class="text-2xl tracking-tight font-bold text-blue-700 dark:text-white text-center mb-2">To Do App</h5>
+                </a>
+                <div class="flex justify-center">
+                  <button class="btn-primary  px-6 py-1.5 rounded-md bg-white text-gray-800 ">
+                    Open Project <i class="ti ti-external-link font-semibold ml-1"></i>
+                  </button>
                 </div>
-                <div class="absolute w-full flex place-content-center mt-10">
-                  <p class="font-sans text-center w-4/5 text-white mt-5">
-                    Clone Programming Hero course module system!
-                  </p>
-                </div>
-                <button class="absolute bottom-4 btn-primary px-6 py-1.5 rounded-md bg-white text-gray-800">
-                  Open Project
-                </button>
               </div>
             </div>
-            <!-- <div class="text-center font-medium">Todo App</div> -->
           </a>
-
           <a href="cource-module.html" target="_blank">
             <div
               class="relative group h-[240px] overflow-hidden m-auto bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
@@ -223,36 +228,8 @@
               </div>
             </div>
           </a>
-          <a href="javascript:;">
-            <div
-              class="relative group h-[240px] overflow-hidden m-auto bg-gray-50 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
-              <img class="p-4 w-full h-full" src="./src/images/Paint _Monochromatic.svg" />
-              <div
-                class="absolute hover:bg-gradient-to-t from-black  w-full h-full transform duration-500 inset-y-44 group-hover:-inset-y-0 flex flex-col items-center">
-                <div class="absolute w-full flex place-content-center">
-                  <p
-                    class="capitalize font-serif font-bold text-3xl text-center shadow-2xl text-blue-700 dark:text-white mt-4">
-                    Drawing App
-                  </p>
-                </div>
-                <div class="absolute w-full flex place-content-center mt-10">
-                  <p class="font-sans text-center w-4/5 text-white mt-5">
-                    Working on it!
-                  </p>
-                </div>
-                <button class="absolute bottom-4 btn-primary px-6 py-1.5 rounded-md bg-white text-gray-800">
-                  Open Project
-                </button>
-              </div>
-            </div>
-          </a>
-          <a href="javascript:;">
-            <div
-              class="h-[240px] flex justify-center overflow-hidden bg-gray-100 dark:bg-slate-800 border border-gray-300 rounded shadow-md">
-              <img src="./src/images/logo.svg"
-                class="w-full transition duration-700 ease-in-out hover:scale-125 hover:rotate-6" alt="" />
-            </div>
-          </a>
+
+
 
         </div>
       </div>
