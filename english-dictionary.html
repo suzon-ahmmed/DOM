@@ -5,12 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Learn DOM</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
-        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    <link rel="icon" type="image/x-icon" href="./src/images/logo.svg">
+    <title>Currency Converter App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./src/css/style.css">
-
 </head>
 
 <body>
@@ -53,73 +52,34 @@
             </div>
         </div>
     </header>
-
     <main>
         <div
             class="fixed h-screen inset-0 bottom-10 bg-bottom bg-no-repeat bg-slate-50 dark:bg-[#0B1120] custom-bg -z-10">
         </div>
         <section>
-            <div
-                class="container mx-auto min-h-[calc(100vh-265px)] flex items-center justify-center  px-2 sm:px-0 mt-20 todo-app">
-                <div class="grid grid-cols-9 gap-4">
-                    <div class="lg:col-span-6 col-span-9">
-                        <div
-                            class="bg-white/50 border  overflow-hidden border-gray-200 rounded shadow-md dark:bg-gray-800/50 dark:border-gray-700">
-                            <div class="h-[452px] milestoneDetails">
-                                <img class="milestoneImage" src="./src/images/kv.png" alt="" />
-                                <div class="m-3 lg:m-6 sm:m-4">
-                                    <h1 class="text-xl sm:text-2xl font-medium title">Module title here</h1>
-                                    <p class="text-sm sm:text-base font-medium line-clamp-1  details">Module description
-                                        here</p>
-                                </div>
-
-                            </div>
+            <div class="container mx-auto  px-2 sm:px-0 mt-20">
+                <div class="min-h-[calc(100vh-265px)] flex items-center justify-center ">
+                    <div
+                        class="bg-white/0 border border-gray-200 rounded shadow-md dark:shadow-white/10 px-4 py-6 dark:bg-gray-800/50 dark:border-gray-700 w-[334px]">
+                        <h1 class="font-medium text-xl text-center mb-4 text-blue-500">English Dictionary</h1>
+                        <div>
+                            <input type="text" id="input" class="bg-transparent w-full rounded-md"
+                                placeholder="Search a word...">
+                            <p class="mt-3 capitalize text-center" id="info-text">Type a word and press enter</p>
                         </div>
-
-                    </div>
-                    <div class="lg:col-span-3 col-span-9">
-                        <div
-                            class="bg-white/50 border border-gray-200 rounded shadow-md dark:bg-gray-800/50 dark:border-gray-700">
-                            <div class="milestones">
-                                <div class="milestone">
-                                    <div class="flex items-center">
-                                        <div class="-mt-1 mr-2 checkbox"><input type="checkbox" />
-                                        </div>
-                                        <div>
-                                            <p class="">
-                                                <span class="max-w-[80%] line-clamp-1"> Milestone 1 name</span>
-                                                <i class="fas fa-chevron-down text-xs pl-1"></i>
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div class="hidden_panel">
-                                        <div class="module border-b border-gray-200 dark:border-gray-600">
-                                            <p><span class="max-w-[80%] line-clamp-1"> Milestone 1 name</span>
-                                                <i class="fas fa-chevron-down text-xs pl-1"></i>
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="doneList">
-                                <!-- done list will load here -->
-                            </div>
-
+                        <div class="space-y-3 mt-6 meaning-container">
+                            <p>Word Title: <span id="word-title" class="capitalize font-semibold">________</span></p>
+                            <p>Meaning: <span id="word-meaning">__________</span></p>
+                            <audio class="pt-3" src="" controls></audio>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>
-
-
-
     </main>
 
     <footer>
-
-        <div class="container mx-auto my-12 sm:my-20 p-2 bg-transparent sm:p-4">
-
+        <div class="container mx-auto p-2 bg-transparent sm:p-4">
             <div class="sm:flex sm:items-center sm:justify-between">
                 <a href="javascript:;" class="flex items-center justify-center">
                     <img src="./src/images/logo.svg" class="mr-3 h-8" alt=" Logo">
@@ -158,32 +118,21 @@
                         </svg>
                         <span class="sr-only">GitHub account</span>
                     </a>
-                    <a href="#" class="text-gray-500 hover:text-gray-900 dark:hover:text-white">
-                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                            <path fill-rule="evenodd"
-                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c5.51 0 10-4.48 10-10S17.51 2 12 2zm6.605 4.61a8.502 8.502 0 011.93 5.314c-.281-.054-3.101-.629-5.943-.271-.065-.141-.12-.293-.184-.445a25.416 25.416 0 00-.564-1.236c3.145-1.28 4.577-3.124 4.761-3.362zM12 3.475c2.17 0 4.154.813 5.662 2.148-.152.216-1.443 1.941-4.48 3.08-1.399-2.57-2.95-4.675-3.189-5A8.687 8.687 0 0112 3.475zm-3.633.803a53.896 53.896 0 013.167 4.935c-3.992 1.063-7.517 1.04-7.896 1.04a8.581 8.581 0 014.729-5.975zM3.453 12.01v-.26c.37.01 4.512.065 8.775-1.215.25.477.477.965.694 1.453-.109.033-.228.065-.336.098-4.404 1.42-6.747 5.303-6.942 5.629a8.522 8.522 0 01-2.19-5.705zM12 20.547a8.482 8.482 0 01-5.239-1.8c.152-.315 1.888-3.656 6.703-5.337.022-.01.033-.01.054-.022a35.318 35.318 0 011.823 6.475 8.4 8.4 0 01-3.341.684zm4.761-1.465c-.086-.52-.542-3.015-1.659-6.084 2.679-.423 5.022.271 5.314.369a8.468 8.468 0 01-3.655 5.715z"
-                                clip-rule="evenodd"></path>
-                        </svg>
-                        <span class="sr-only">Dribbbel account</span>
-                    </a>
                 </div>
             </div>
             <hr class="my-2 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8">
 
             <div class="text-center">
-                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="javascript:;"
+                <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">©
+                    <script>document.write(new Date().getFullYear());</script> <a href="https://suzon-ahmmed.github.io"
                         class="hover:underline">SA™</a>. All Rights Reserved.
                 </span>
             </div>
         </div>
-
-
     </footer>
 
-
     <script src="./src/js/color.js"></script>
-    <script src="./src/js/data.js"></script>
-    <script src="./src/js/cource-module.js"></script>
+    <script src="./src/js/dictionary.js"></script>
 </body>
 
 </html>

@@ -15,9 +15,9 @@ function loadMilestone() {
             ${milestone._id})" />
         </div>
         <div onclick="openMilestone(this, ${milestone._id})">
-            <p>
-                ${milestone.name}
-                <span><i class="fas fa-chevron-down text-xs pl-1 "></i></span>
+            <p class="flex items-center justify-between">
+               <span class="w-[80%] line-clamp-1"> ${milestone.name}</span>
+                <i class="fas fa-chevron-down text-xs pl-1 "></i>
             </p>
         </div>
     </div>

@@ -94,7 +94,7 @@ section {
 
   .milestones,
   .doneList {
-    @apply cursor-pointer max-h-[530px] overflow-auto;
+    @apply cursor-pointer max-h-[452px] overflow-auto;
   }
 
   .doneList {
@@ -147,5 +147,9 @@ section {
   /* dd-select */
   .dd-option {
     @apply flex items-center h-10;
+  }
+  /* design for english dictionary  */
+  .meaning-container {
+    @apply hidden;
   }
 }
